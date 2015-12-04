@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>테이블이용해서 회원가입양식 만들기</title>
+</head>
+<body>
+
+<center>
+
+<fieldset>
+     <legend>회원가입</legend>
+
+        <table border="1" weight="">
+        <tr>
+            <td>
+                <label for="usern">사용자이름</label>
+            </td>
+            <td><input type="text" id="usern"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="id">아이디</label>
+                </td>
+            <td>
+                <input type="text" id="id">
+                <input type="button" value="중복확인">
+            </td>
+        </tr>
+
+<tr>
+    <td>
+        <label for="fw">비밀번호</label>
+    </td>
+    <td>
+        <input type="password" id="fw"><br/>
+
+            <em>
+                - 영문, 숫자 조합으로 6~20자까지 사용가능합니다.<br/>
+                - 첫 글자는 영문으로 설정해 주십시오.
+            </em>
+
+        </input>
+    </td>
+
+</tr>
+<tr>
+    <td>
+        <label for="fwr">비밀번호확인</label>
+
+        </td>
+    <td>
+        <input type="password" id="fwr"><br/>
+            <em>
+                - 영문, 숫자, 특수 문자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)<br/>
+                - 유출되기 쉬운 비밀번호는 등록할 수 없습니다. (예:111, abcd, password 등)
+            </em>
+        </input>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <label for="email">이메일</label>
+    </td>
+
+    <td>
+        <input type="text" id="email"> @
+
+        <select>
+            <option>직접입력</option>
+            <option>naver.com</option>
+            <option>daum.net</option>
+            <option>gmail.com</option>
+            <option>hotmail.com</option>
+        </select>
+
+    </td>
+
+
+</tr>
+
+<tr>
+    <td>
+        <label for="tel">연락처</label>
+    </td>
+
+    <td>
+        <input type="text" id="tel"> -
+        <input type="text"> -
+        <input type="text">
+    </td>
+
+</tr>
+<tr>
+    <td>
+        <label for="phon">휴대전화</label>
+    </td>
+
+    <td>
+        <select>
+            <option>010</option>
+            <option>011</option>
+            <option>016</option>
+            <option>017</option>
+            <option>019</option>
+        </select>
+
+    <input type="text"id="phon"> -
+    <input type="text"></td>
+</tr>
+<tr>
+    <td>
+        <label for="address">주소</label>
+
+    </td>
+    <td>
+        <input type="text" id="address"> -
+
+        <input type="text">
+        <input type="submit" value="주소찾기"><br/>
+
+        <input type="text"><br/>
+
+        <input type="text">
+    </td>
+</tr>
+
+    </table>
+
+    </fieldset>
+
+<br/>
+
+        <input type="button" value="회원가입">
+    </center>
+</body>
+</html>
